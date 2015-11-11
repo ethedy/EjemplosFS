@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-3.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-3.0 MvcSiteMapSchema.xsd"
+            enableLocalization="false">
+
+  <mvcSiteMapNode title="Home" controller="Home" action="Index">
+    <mvcSiteMapNode title="Todas las Fotos Todas" controller="Photo" action="Index" key="allPhotos"/>
+    <mvcSiteMapNode title="Detalles de no se que" controller="Photo" action="Detalle" key="detPhotos" />
+    <mvcSiteMapNode title="Comentarios" controller="Comment" action="Index">
+      <mvcSiteMapNode title="Buscar por persona" controller="Comment" action="Buscar" />
+    </mvcSiteMapNode>
+    <mvcSiteMapNode title="Acerca de..." controller="Home" action="About"/>
+  </mvcSiteMapNode>
+</mvcSiteMap>
