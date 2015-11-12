@@ -26,6 +26,7 @@ namespace ErrorHandlers.Controllers
           ViewName = "OnException",
           ViewData = new ViewDataDictionary<string>(filterContext.Exception.Message)
         };
+        filterContext.ExceptionHandled = true;
       }
     }
   }
