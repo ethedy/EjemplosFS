@@ -1,6 +1,9 @@
-﻿@using System.Web.Optimization
+﻿@using Bundles.Models
+@model IEnumerable<Bundles.Models.Modelo>
+
 @{
-    Layout = null;
+  //@using System.Web.Optimization
+  Layout = null;
 }
 
 <!DOCTYPE html>
@@ -9,11 +12,16 @@
 <head>
     <meta name="viewport" content="width=device-width" />
   <title>Index</title>
-  @Scripts.Render("~/bundles/scripts")
+  @*  @Scripts.Render("~/bundles/scripts") *@
 </head>
 <body>
-    <div>
-        
-    </div>
+<div>
+  @foreach (var item in Model)
+  {
+    @Html.DisplayNameFor((Modelo x) => x.Propiedad)
+    @Html.DisplayFor(m => item.Propiedad)
+
+  }
+</div>
 </body>
 </html>
