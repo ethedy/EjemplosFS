@@ -14,12 +14,8 @@ namespace HolaAzureRole
   {
 
     [OperationContract]
-    string GetData(int value);
+    string GetSaludo();
 
-    [OperationContract]
-    CompositeType GetDataUsingDataContract(CompositeType composite);
-
-    // TODO: Add your service operations here
   }
 
 

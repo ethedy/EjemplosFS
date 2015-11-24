@@ -12,6 +12,8 @@
     <AssemblyName>HolaAzureService</AssemblyName>
     <StartDevelopmentStorage>True</StartDevelopmentStorage>
     <Name>HolaAzureService</Name>
+    <PackageEnableRemoteDebugger>False</PackageEnableRemoteDebugger>
+    <UseWebProjectPorts>False</UseWebProjectPorts>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,6 +39,14 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HolaAzureInternalService\HolaAzureInternalService.csproj">
+      <Name>HolaAzureInternalService</Name>
+      <Project>{3be683b3-255e-43cf-8557-121b689c14c2}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>HolaAzureInternalService</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
     <ProjectReference Include="..\HolaAzureRole\HolaAzureRole.csproj">
       <Name>HolaAzureRole</Name>
       <Project>{2a567ae4-c823-47ce-a218-64eb31f7f392}</Project>
@@ -45,12 +55,24 @@
       <RoleName>HolaAzureRole</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
+    <ProjectReference Include="..\HolaAzureWorker\HolaAzureWorker.csproj">
+      <Name>HolaAzureWorker</Name>
+      <Project>{4c52e572-749d-4d90-bb0e-55c88dc34139}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>HolaAzureWorker</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="HolaAzureInternalServiceContent\" />
     <Folder Include="HolaAzureRoleContent\" />
+    <Folder Include="HolaAzureWorkerContent\" />
   </ItemGroup>
   <ItemGroup>
+    <DiagnosticsConfiguration Include="HolaAzureInternalServiceContent\diagnostics.wadcfgx" />
     <DiagnosticsConfiguration Include="HolaAzureRoleContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="HolaAzureWorkerContent\diagnostics.wadcfgx" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>

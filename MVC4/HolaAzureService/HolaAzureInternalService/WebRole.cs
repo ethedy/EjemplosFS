@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.ServiceRuntime;
 
-namespace HolaAzureRole
+namespace HolaAzureInternalService
 {
   public class WebRole : RoleEntryPoint
   {
@@ -14,9 +13,6 @@ namespace HolaAzureRole
     {
       // For information on handling configuration changes
       // see the MSDN topic at http://go.microsoft.com/fwlink/?LinkId=166357.
-      Trace.TraceInformation("OnStart llamado en WebRole");
-
-      Trace.TraceInformation("Registrando el endpoint interno");
 
       return base.OnStart();
     }

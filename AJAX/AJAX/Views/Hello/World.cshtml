@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width"/>
+  <title>World</title>
+
+  <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+  <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+</head>
+
+
+
+<body>
+    <div>
+      Mensaje: @ViewBag.Mensaje
+    </div>
+    @Html.ActionLink("Refrescar", "HelloWorldRefresh")
+
+    <div id="divAjax">
+      Mensaje AJAX: @ViewBag.Mensaje
+    </div>
+  @Ajax.ActionLink("AJAX Refresh", "HelloWorld", new AjaxOptions()
+  {
+    HttpMethod = "POST", UpdateTargetId = "divAjax",
+    InsertionMode = InsertionMode.Replace
+  })
+
+  </body>
+</html>
