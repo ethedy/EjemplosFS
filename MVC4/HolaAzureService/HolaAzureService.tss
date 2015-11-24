@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureRole\HolaService.svc.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>c:\users\enrique\documents\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazurerole\iholaservice.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>c:\users\enrique\documents\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazurerole\webrole.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>c:\users\enrique\documents\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazureworker\workerrole.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureService\ServiceConfiguration.Cloud.cscfg</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureService\ServiceDefinition.csdef</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureInternalService\IInternalService.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureInternalService\SaludoInternalAzure.svc.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>HolaAzureService</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureRole\ServiceInfo.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>

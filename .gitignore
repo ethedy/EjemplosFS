@@ -188,3 +188,6 @@ GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
 
+/MVC4/HolaAzureService/packages
+/MVC4/SiteMapProvider/packages
+/MVC4/Bundles/packages

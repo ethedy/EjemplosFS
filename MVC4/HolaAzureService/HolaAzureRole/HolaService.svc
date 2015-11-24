@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="HolaAzureRole.HolaService" CodeBehind="HolaService.svc.cs" %>
