@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="76a24d6d-27fd-49c5-ab2f-e19f4eb7ea2c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bd5d246e-1980-4f03-8c60-d8da9e03b33f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost:52234/HolaService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="HolaService.xsd" MetadataType="Schema" ID="aed29dbb-167b-4a8f-8d3e-49a1b8ffe044" SourceId="1" SourceUrl="http://localhost:52234/HolaService.svc?xsd=xsd0" />
-    <MetadataFile FileName="HolaService.disco" MetadataType="Disco" ID="424d2ea8-da39-41f2-97c4-00b56e4b50dc" SourceId="1" SourceUrl="http://localhost:52234/HolaService.svc?disco" />
-    <MetadataFile FileName="HolaService.wsdl" MetadataType="Wsdl" ID="cc087901-ab1f-4213-8f3d-97e096499342" SourceId="1" SourceUrl="http://localhost:52234/HolaService.svc?wsdl" />
-    <MetadataFile FileName="HolaService1.xsd" MetadataType="Schema" ID="d6c5524f-206e-443b-b97c-c28ea4d89672" SourceId="1" SourceUrl="http://localhost:52234/HolaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="HolaService.xsd" MetadataType="Schema" ID="745fc4b7-9b40-4182-a342-4342efc52a94" SourceId="1" SourceUrl="http://localhost:52234/HolaService.svc?xsd=xsd0" />
+    <MetadataFile FileName="HolaService.disco" MetadataType="Disco" ID="18f95da6-d15c-4659-b56e-8da441ad7693" SourceId="1" SourceUrl="http://localhost:52234/HolaService.svc?disco" />
+    <MetadataFile FileName="HolaService.wsdl" MetadataType="Wsdl" ID="a72535f8-a266-4832-a313-057894dc2369" SourceId="1" SourceUrl="http://localhost:52234/HolaService.svc?wsdl" />
+    <MetadataFile FileName="HolaService1.xsd" MetadataType="Schema" ID="76aaf17f-948e-4329-bc7c-e8a40693f5b5" SourceId="1" SourceUrl="http://localhost:52234/HolaService.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

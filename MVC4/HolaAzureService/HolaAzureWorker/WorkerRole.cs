@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net;
+using System.ServiceModel;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.ServiceRuntime;
-using Microsoft.WindowsAzure.Storage;
 
 namespace HolaAzureWorker
 {
@@ -17,17 +17,33 @@ namespace HolaAzureWorker
     private readonly CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
     private readonly ManualResetEvent runCompleteEvent = new ManualResetEvent(false);
 
+    public static string CommonArea;
+
     public override void Run()
     {
       Trace.TraceInformation("HolaAzureWorker is running");
 
+      Trace.TraceInformation("Bindeando el endpoint interno al servicio");
+
+      var internalEndpoint = RoleEnvironment.CurrentRoleInstance.InstanceEndpoints["InternalWorker"];
+      var serviceAddress = new Uri(string.Format("net.tcp://{0}", internalEndpoint.IPEndpoint.ToString()));
+
+      Trace.TraceInformation(serviceAddress.ToString());
+
+      var serviceHost = new ServiceHost(typeof(WorkerInternalService), serviceAddress);
+      var binding = new NetTcpBinding(SecurityMode.None);
+
+      serviceHost.AddServiceEndpoint(typeof (IWorkerInternalService), binding, "helloservice");
+
       try
       {
+        serviceHost.Open();
         this.RunAsync(this.cancellationTokenSource.Token).Wait();
       }
       finally
       {
         this.runCompleteEvent.Set();
+        serviceHost.Close();
       }
     }
 
@@ -60,10 +76,13 @@ namespace HolaAzureWorker
 
     private async Task RunAsync(CancellationToken cancellationToken)
     {
-      // TODO: Replace the following with your own logic.
+      // el worker lo unico que hace es esperar...y cambiar la fecha cada 5 segundos
       while (!cancellationToken.IsCancellationRequested)
       {
         Trace.TraceInformation("Working");
+
+        CommonArea = DateTime.Now.ToString("O");
+
         await Task.Delay(5000);
       }
     }

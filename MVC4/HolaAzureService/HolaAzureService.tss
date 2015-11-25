@@ -2,34 +2,22 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureRole\HolaService.svc.cs</string>
+      <string>f:\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazurerole\webrole.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>c:\users\enrique\documents\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazurerole\iholaservice.cs</string>
+      <string>f:\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazurerole\holaservice.svc.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>c:\users\enrique\documents\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazurerole\webrole.cs</string>
+      <string>f:\desarrollo\ejemplosfs\mvc4\holaazureservice\pruebawebrole\program.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>c:\users\enrique\documents\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazureworker\workerrole.cs</string>
+      <string>f:\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazureworker\workerrole.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureService\ServiceConfiguration.Cloud.cscfg</string>
+      <string>f:\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazureworker\workerinternalservice.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureService\ServiceDefinition.csdef</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureInternalService\IInternalService.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureInternalService\SaludoInternalAzure.svc.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>HolaAzureService</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureRole\ServiceInfo.cs</string>
+      <string>F:\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\PruebaWebRole\App.config</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

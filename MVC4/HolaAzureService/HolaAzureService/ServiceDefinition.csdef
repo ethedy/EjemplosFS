@@ -5,7 +5,6 @@
       <Site name="Web">
         <Bindings>
           <Binding name="Endpoint1" endpointName="HolaExternal" />
-          <Binding name="Endpoint1" endpointName="HolaInternal" />
         </Bindings>
       </Site>
     </Sites>
@@ -14,27 +13,14 @@
     </ConfigurationSettings>
     <Endpoints>
       <InputEndpoint name="HolaExternal" protocol="http" port="80" />
-      <InternalEndpoint name="HolaInternal" protocol="http" />
     </Endpoints>
   </WebRole>
-  <WorkerRole name="HolaAzureWorker" vmsize="Small">
-    <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
-    </ConfigurationSettings>
-  </WorkerRole>
-  <WebRole name="HolaAzureInternalService" vmsize="Small">
-    <Sites>
-      <Site name="Web">
-        <Bindings>
-          <Binding name="Endpoint1" endpointName="InternalHola" />
-        </Bindings>
-      </Site>
-    </Sites>
+  <WorkerRole name="HolaAzureWorker" vmsize="ExtraSmall">
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
     </ConfigurationSettings>
     <Endpoints>
-      <InternalEndpoint name="InternalHola" protocol="http" />
+      <InternalEndpoint name="InternalWorker" protocol="tcp" />
     </Endpoints>
-  </WebRole>
+  </WorkerRole>
 </ServiceDefinition>

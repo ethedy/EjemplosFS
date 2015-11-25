@@ -39,14 +39,6 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HolaAzureInternalService\HolaAzureInternalService.csproj">
-      <Name>HolaAzureInternalService</Name>
-      <Project>{3be683b3-255e-43cf-8557-121b689c14c2}</Project>
-      <Private>True</Private>
-      <RoleType>Web</RoleType>
-      <RoleName>HolaAzureInternalService</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
-    </ProjectReference>
     <ProjectReference Include="..\HolaAzureRole\HolaAzureRole.csproj">
       <Name>HolaAzureRole</Name>
       <Project>{2a567ae4-c823-47ce-a218-64eb31f7f392}</Project>

@@ -8,6 +8,5 @@ namespace HolaAzureRole
 {
   public class ServiceInfo
   {
-    public 
   }
 }
