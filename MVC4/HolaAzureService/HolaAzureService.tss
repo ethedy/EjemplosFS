@@ -2,22 +2,22 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>f:\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazurerole\webrole.cs</string>
+      <string>WindowsAzure: HolaAzureService.HolaAzureRole</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>f:\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazurerole\holaservice.svc.cs</string>
+      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureRole\WebRole.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>f:\desarrollo\ejemplosfs\mvc4\holaazureservice\pruebawebrole\program.cs</string>
+      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureRole\HolaService.svc.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>f:\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazureworker\workerrole.cs</string>
+      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\PruebaWebRole\Program.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>f:\desarrollo\ejemplosfs\mvc4\holaazureservice\holaazureworker\workerinternalservice.cs</string>
+      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\PruebaWebRole\App.config</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>F:\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\PruebaWebRole\App.config</string>
+      <string>C:\Users\Enrique\Documents\DESARROLLO\EjemplosFS\MVC4\HolaAzureService\HolaAzureWorker\WorkerInternalService.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

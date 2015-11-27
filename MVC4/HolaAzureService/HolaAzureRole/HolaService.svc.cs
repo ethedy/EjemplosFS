@@ -25,7 +25,8 @@ namespace HolaAzureRole
       string ppid = Process.GetCurrentProcess().ProcessName;
       
       string wip =
-        RoleEnvironment.Roles["HolaAzureWorker"].Instances[0].InstanceEndpoints["InternalWorker"].IPEndpoint.ToString();
+        RoleEnvironment.Roles["HolaAzureWorker"].Instances[0]
+          .InstanceEndpoints["InternalWorker"].IPEndpoint.ToString();
 
       Trace.TraceInformation(wip);
 

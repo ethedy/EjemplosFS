@@ -5,15 +5,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>2.8</ProductVersion>
-    <ProjectGuid>0e0d80d8-4300-4894-967c-02cfc4a69855</ProjectGuid>
+    <ProjectGuid>bc630352-441a-4104-a1ee-c3d4c409ee88</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HolaAzureService</RootNamespace>
-    <AssemblyName>HolaAzureService</AssemblyName>
+    <RootNamespace>SimpleService</RootNamespace>
+    <AssemblyName>SimpleService</AssemblyName>
     <StartDevelopmentStorage>True</StartDevelopmentStorage>
-    <Name>HolaAzureService</Name>
+    <Name>SimpleService</Name>
+    <UseWebProjectPorts>False</UseWebProjectPorts>
     <PackageEnableRemoteDebugger>False</PackageEnableRemoteDebugger>
-    <UseWebProjectPorts>True</UseWebProjectPorts>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,32 +39,24 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HolaAzureRole\HolaAzureRole.csproj">
-      <Name>HolaAzureRole</Name>
-      <Project>{2a567ae4-c823-47ce-a218-64eb31f7f392}</Project>
+    <ProjectReference Include="..\Service\Service.csproj">
+      <Name>Service</Name>
+      <Project>{5012b5c2-b215-4439-84cf-624b79aac2e6}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
-      <RoleName>HolaAzureRole</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
-    </ProjectReference>
-    <ProjectReference Include="..\HolaAzureWorker\HolaAzureWorker.csproj">
-      <Name>HolaAzureWorker</Name>
-      <Project>{4c52e572-749d-4d90-bb0e-55c88dc34139}</Project>
-      <Private>True</Private>
-      <RoleType>Worker</RoleType>
-      <RoleName>HolaAzureWorker</RoleName>
+      <RoleName>Service</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="HolaAzureInternalServiceContent\" />
-    <Folder Include="HolaAzureRoleContent\" />
-    <Folder Include="HolaAzureWorkerContent\" />
+    <Folder Include="Profiles" />
+    <Folder Include="ServiceContent\" />
   </ItemGroup>
   <ItemGroup>
-    <DiagnosticsConfiguration Include="HolaAzureInternalServiceContent\diagnostics.wadcfgx" />
-    <DiagnosticsConfiguration Include="HolaAzureRoleContent\diagnostics.wadcfgx" />
-    <DiagnosticsConfiguration Include="HolaAzureWorkerContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="ServiceContent\diagnostics.wadcfgx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishProfile Include="Profiles\ethedyStaging.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
