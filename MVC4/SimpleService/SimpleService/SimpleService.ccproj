@@ -12,7 +12,7 @@
     <AssemblyName>SimpleService</AssemblyName>
     <StartDevelopmentStorage>True</StartDevelopmentStorage>
     <Name>SimpleService</Name>
-    <UseWebProjectPorts>False</UseWebProjectPorts>
+    <UseWebProjectPorts>True</UseWebProjectPorts>
     <PackageEnableRemoteDebugger>False</PackageEnableRemoteDebugger>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
